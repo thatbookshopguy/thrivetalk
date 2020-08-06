@@ -20,6 +20,7 @@ ul {
   list-style: none;
 }
 
+
 /* header */
 .page-header {
   margin: 0;
@@ -27,6 +28,7 @@ ul {
 }
 
 .main-nav {
+  z-index: 2;
   margin: 0;
   padding: 0;
   padding-top: 28px;
@@ -102,15 +104,14 @@ ul {
 
 .intro {
   margin: 0;
+  margin-right: 320px; 
   padding-top: 230px;
   padding-left: 179px;
   padding-bottom: 75px;
   background-color: #F4F9E2;
-  background-image: url(./img/intro.jpg);
-  background-position: right;
-  background-size: 743px 750px;
-  background-repeat: no-repeat;
 }
+
+
 
 .intro__title {
   font-size: 24px;
@@ -168,6 +169,32 @@ ul {
 .intro__btn:hover {
   background: #F9B640;
   color: #FFFFFF;
+}
+
+.intro__ellipse {
+  position: absolute;
+  top: -25px;
+  right: -25px;
+
+  width: 743px;
+  height: 824px;
+  background-image: url(./img/ellipse.svg);
+  background-position: right;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+.intro__img {
+  position: absolute;
+  top: 0;
+  right: 0;
+
+  width: 743px;
+  height: 824px;
+  background-image: url(./img/intro.png);
+  background-position: right;
+  background-size: contain;
+  background-repeat: no-repeat;
 }
 
 /* advantages */
